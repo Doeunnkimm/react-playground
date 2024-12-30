@@ -1,7 +1,8 @@
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
+// import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
+import { VirtualDom } from './virtual-dom/VirtualDom';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
 // import { SyntheticEvent } from './SyntheticEvent/index.tsx';
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <UpdateState /> */}
     {/* <FlushSync /> */}
     {/* <UseOverlayExample /> */}
-    <CleanUpFunction />
+    {/* <CleanUpFunction /> */}
+    <VirtualDom />
   </>
 );
