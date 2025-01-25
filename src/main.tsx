@@ -2,7 +2,8 @@
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
-import { VirtualDom } from './virtual-dom/VirtualDom';
+// import { VirtualDom } from './virtual-dom/VirtualDom';
+import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
 // import { SyntheticEvent } from './SyntheticEvent/index.tsx';
@@ -18,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <FlushSync /> */}
     {/* <UseOverlayExample /> */}
     {/* <CleanUpFunction /> */}
-    <VirtualDom />
+    {/* <VirtualDom /> */}
+    <BottomSheetTest />
   </>
 );
