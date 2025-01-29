@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
-import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
+// import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
+import { SingletonTest } from './singleton/axios-example/Test';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
 // import { SyntheticEvent } from './SyntheticEvent/index.tsx';
@@ -20,6 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <UseOverlayExample /> */}
     {/* <CleanUpFunction /> */}
     {/* <VirtualDom /> */}
-    <BottomSheetTest />
+    {/* <BottomSheetTest /> */}
+    <SingletonTest />
   </>
 );
