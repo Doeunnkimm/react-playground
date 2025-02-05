@@ -40,12 +40,32 @@ export const tsMorphAddDisplayName = (globPatterns: Array<string>): PluginOption
             `const ${nameSpaceName} = withNamespaceDisplayName(_${nameSpaceName}, '${nameSpaceName}')`,
             `export { ${nameSpaceName} }`,
           ]);
-
-          // export * as Temp from './components'; 을 제거
-          exportDeclaration.remove();
         } else {
-          return code;
+          const namedExports = exportDeclaration.getNamedExports();
+
+          // import { ObjectTemp as _ObjectTemp } from "./components/ObjectTemp";
+          sourceFile.addImportDeclaration({
+            moduleSpecifier,
+            namedImports: namedExports.map((namedExport) => ({
+              name: namedExport.getName(),
+              alias: `_${namedExport.getName()}`,
+            })),
+          });
+
+          namedExports.forEach((namedExport) => {
+            const name = namedExport.getName();
+            sourceFile.insertStatements(
+              0,
+              `import { withNamedDisplayName } from '@/namespace-exports-displayName/storybook-utils/withNamedDisplayName';`
+            );
+            sourceFile.addStatements([
+              `const ${name} = withNamedDisplayName(_${name}, '${name}')`,
+              `export { ${name} }`,
+            ]);
+          });
         }
+        // 기존 export 문을 제거
+        exportDeclaration.remove();
       });
       console.log('@@ fullText -> ', sourceFile.getFullText());
       return sourceFile.getFullText();
