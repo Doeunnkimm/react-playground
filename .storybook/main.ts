@@ -1,6 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
 import { InlineConfig } from 'vite';
-import { componentDisplayName } from '../src/namespace-exports-displayName/storybook-utils/componentDisplayName';
+// import { componentDisplayName } from '../src/namespace-exports-displayName/storybook-utils/componentDisplayName';
 import { tsMorphAddDisplayName } from '../src/namespace-exports-displayName/storybook-utils/tsMorphAddDisplayName';
 
 const TEST_DIRECTORY = '**/src/namespace-exports-displayName/index.ts';
