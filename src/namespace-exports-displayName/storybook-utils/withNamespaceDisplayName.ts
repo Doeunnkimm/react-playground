@@ -1,6 +1,8 @@
 export const withNamespaceDisplayName = (module: Record<string, any>, displayName: string) => {
-  Object.keys(module).forEach((key) => {
-    module[key].displayName = `${displayName}.${key}`;
-  });
-  return module;
+  return Object.fromEntries(
+    Object.entries(module).map(([key, value]) => [
+      key,
+      value != null && typeof value === 'object' ? { ...value, displayName: `${displayName}.${key}` } : value,
+    ])
+  );
 };
