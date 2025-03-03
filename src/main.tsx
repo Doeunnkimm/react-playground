@@ -4,7 +4,8 @@ import './index.css';
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
 // import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
-import { SingletonTest } from './singleton/axios-example/Test';
+// import { SingletonTest } from './singleton/axios-example/Test';
+import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
 // import { SyntheticEvent } from './SyntheticEvent/index.tsx';
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <CleanUpFunction /> */}
     {/* <VirtualDom /> */}
     {/* <BottomSheetTest /> */}
-    <SingletonTest />
+    {/* <SingletonTest /> */}
+    <ReflowTrigger />
   </>
 );
