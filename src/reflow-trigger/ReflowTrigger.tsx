@@ -35,7 +35,6 @@ export const ReflowTrigger = () => {
           width: '100px',
           height: '100px',
           backgroundColor: 'lightblue',
-          //   transition: 'width 0.3s',
         }}
       />
       <button onClick={handleReflowTest}>DOM 조작하고 offsetWidth 바로 읽기</button>
