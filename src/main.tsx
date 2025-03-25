@@ -5,7 +5,9 @@ import './index.css';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
 // import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
 // import { SingletonTest } from './singleton/axios-example/Test';
-import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
+// import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
+import { SameKeyProp } from './same-key-prop/SameKeyProp';
+// import { ReactElement } from './same-key-prop/ReactElement';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
 // import { SyntheticEvent } from './SyntheticEvent/index.tsx';
@@ -24,6 +26,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <VirtualDom /> */}
     {/* <BottomSheetTest /> */}
     {/* <SingletonTest /> */}
-    <ReflowTrigger />
+    {/* <ReflowTrigger /> */}
+    <SameKeyProp />
+    {/* <ReactElement /> */}
   </>
 );
