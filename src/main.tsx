@@ -7,6 +7,7 @@ import './index.css';
 // import { SingletonTest } from './singleton/axios-example/Test';
 // import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
 import { SameKeyProp } from './same-key-prop/SameKeyProp';
+// import { ReactElement } from './same-key-prop/ReactElement';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
 // import { SyntheticEvent } from './SyntheticEvent/index.tsx';
@@ -27,5 +28,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <SingletonTest /> */}
     {/* <ReflowTrigger /> */}
     <SameKeyProp />
+    {/* <ReactElement /> */}
   </>
 );
