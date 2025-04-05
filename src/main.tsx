@@ -2,13 +2,14 @@ import '../app.css.ts';
 
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { RenderButtonGroupWithVanillaExtract } from './vanilla-extract/ButtonGroup.tsx';
+
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
 // import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
 // import { SingletonTest } from './singleton/axios-example/Test';
 // import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
 // import { SameKeyProp } from './same-key-prop/SameKeyProp';
-import { VanillaExtractExample } from './vanilla-extract/VanillaExtractExample';
 
 // import './index.css';
 
@@ -34,6 +35,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <ReflowTrigger /> */}
     {/* <SameKeyProp /> */}
     {/* <ReactElement /> */}
-    <VanillaExtractExample />
+    {/* <VanillaExtractExample /> */}
+    <RenderButtonGroupWithVanillaExtract />
   </>
 );

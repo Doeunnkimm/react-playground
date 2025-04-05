@@ -10,7 +10,7 @@
 
 import { style } from '@vanilla-extract/css';
 
-// Emotion 스타일링 예시 (주석으로 표시)
+// Emotion 스타일링 예시
 /*
 import { css } from '@emotion/react';
 
@@ -38,5 +38,29 @@ export const buttonStyle = style({
   fontSize: '16px',
   ':hover': {
     backgroundColor: '#45a049',
+  },
+});
+
+// Emotion 스타일링 예시
+/*
+import { css } from '@emotion/react';
+
+const containerCss = css({
+  '& > button': {
+    backgroundColor: 'red',
+  },
+});
+*/
+
+/**
+ * @NOTE
+ * emotion에서는 '&' 나를 기준으로 하위 요소들에 대한 스타일링이 가능했는데
+ * vanilla-extract에서는 거꾸로다... 🫢
+ */
+export const buttonStyle2 = style({
+  selectors: {
+    'div > &': {
+      backgroundColor: 'red',
+    },
   },
 });
