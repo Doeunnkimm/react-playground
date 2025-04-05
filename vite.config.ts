@@ -6,6 +6,9 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   plugins: [react(), vanillaExtractPlugin()],
   resolve: {
-    alias: [{ find: '@', replacement: '/src' }],
+    alias: [
+      { find: '@', replacement: '/src' },
+      { find: 'theme', replacement: './theme.css.ts' },
+    ],
   },
 });
