@@ -1,4 +1,4 @@
-import './index.css';
+import '../app.css.ts';
 
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -9,6 +9,8 @@ import ReactDOM from 'react-dom/client';
 // import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
 // import { SameKeyProp } from './same-key-prop/SameKeyProp';
 import { VanillaExtractExample } from './vanilla-extract/VanillaExtractExample';
+
+// import './index.css';
 
 // import { ReactElement } from './same-key-prop/ReactElement';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
