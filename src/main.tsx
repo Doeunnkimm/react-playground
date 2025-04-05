@@ -1,8 +1,8 @@
 import '../app.css.ts';
 
+import { EmotionExample } from './vanilla-extract/vs-emotion/EmotionExample.tsx';
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RenderButtonGroupWithVanillaExtract } from './vanilla-extract/ButtonGroup/ButtonGroup.tsx';
 
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
@@ -36,6 +36,21 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <SameKeyProp /> */}
     {/* <ReactElement /> */}
     {/* <VanillaExtractExample /> */}
-    <RenderButtonGroupWithVanillaExtract />
+    {/* <RenderButtonGroupWithVanillaExtract /> */}
+    <EmotionExample />
+    {/* <VanillaExtractExample /> */}
   </>
 );
+
+// const observer = new MutationObserver((mutations) => {
+//   mutations.forEach((mutation) => {
+//     mutation.addedNodes.forEach((node) => {
+//       if ((node as HTMLElement).tagName === 'STYLE') {
+//         console.log('🔍 새로운 style 태그가 추가됨:', node);
+//         console.log('📍 내용 일부:', node.textContent?.slice(0, 200));
+//       }
+//     });
+//   });
+// });
+
+// observer.observe(document.head, { childList: true });
