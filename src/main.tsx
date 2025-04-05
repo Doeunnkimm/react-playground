@@ -2,7 +2,7 @@ import '../app.css.ts';
 
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RenderButtonGroupWithVanillaExtract } from './vanilla-extract/ButtonGroup.tsx';
+import { RenderButtonGroupWithVanillaExtract } from './vanilla-extract/ButtonGroup/ButtonGroup.tsx';
 
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
