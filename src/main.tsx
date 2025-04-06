@@ -1,12 +1,18 @@
+import '../app.css.ts';
+
+import { EmotionExample } from './vanilla-extract/vs-emotion/EmotionExample.tsx';
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
 // import { BottomSheetTest } from './bottom-sheet/BottomSheetTest';
 // import { SingletonTest } from './singleton/axios-example/Test';
 // import { ReflowTrigger } from './reflow-trigger/ReflowTrigger';
-import { SameKeyProp } from './same-key-prop/SameKeyProp';
+// import { SameKeyProp } from './same-key-prop/SameKeyProp';
+
+// import './index.css';
+
 // import { ReactElement } from './same-key-prop/ReactElement';
 // import { UseOverlayExample } from './overlay/useOverlay/UseOverlay';
 // import { FlushSync } from './flushSync/FlushSync';
@@ -27,7 +33,24 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <BottomSheetTest /> */}
     {/* <SingletonTest /> */}
     {/* <ReflowTrigger /> */}
-    <SameKeyProp />
+    {/* <SameKeyProp /> */}
     {/* <ReactElement /> */}
+    {/* <VanillaExtractExample /> */}
+    {/* <RenderButtonGroupWithVanillaExtract /> */}
+    <EmotionExample />
+    {/* <VanillaExtractExample /> */}
   </>
 );
+
+// const observer = new MutationObserver((mutations) => {
+//   mutations.forEach((mutation) => {
+//     mutation.addedNodes.forEach((node) => {
+//       if ((node as HTMLElement).tagName === 'STYLE') {
+//         console.log('🔍 새로운 style 태그가 추가됨:', node);
+//         console.log('📍 내용 일부:', node.textContent?.slice(0, 200));
+//       }
+//     });
+//   });
+// });
+
+// observer.observe(document.head, { childList: true });
