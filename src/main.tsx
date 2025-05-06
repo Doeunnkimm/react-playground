@@ -1,8 +1,8 @@
 import '../app.css.ts';
 
-import { EmotionExample } from './vanilla-extract/vs-emotion/EmotionExample.tsx';
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ReactTypes } from './react-types/ReactTypes.tsx';
 
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
@@ -37,8 +37,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <ReactElement /> */}
     {/* <VanillaExtractExample /> */}
     {/* <RenderButtonGroupWithVanillaExtract /> */}
-    <EmotionExample />
+    {/* <EmotionExample /> */}
     {/* <VanillaExtractExample /> */}
+    <ReactTypes />
   </>
 );
 
