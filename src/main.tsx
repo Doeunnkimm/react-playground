@@ -2,7 +2,7 @@ import '../app.css.ts';
 
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ReactTypes } from './react-types/ReactTypes.tsx';
+import { VanillaExtractMore } from './vanilla-extract-more/VanillaExtractMore.tsx';
 
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
@@ -39,7 +39,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <RenderButtonGroupWithVanillaExtract /> */}
     {/* <EmotionExample /> */}
     {/* <VanillaExtractExample /> */}
-    <ReactTypes />
+    {/* <ReactTypes /> */}
+    <VanillaExtractMore />
   </>
 );
 
