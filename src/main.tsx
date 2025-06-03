@@ -1,8 +1,8 @@
 import '../app.css.ts';
 
+import { FocusInOut } from './focus-in-out/FocusInOut.tsx';
 // import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { ReactTypes } from './react-types/ReactTypes.tsx';
 
 // import { CleanUpFunction } from './clean-up-function/CleanUpFunction';
 // import { VirtualDom } from './virtual-dom/VirtualDom';
@@ -39,7 +39,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     {/* <RenderButtonGroupWithVanillaExtract /> */}
     {/* <EmotionExample /> */}
     {/* <VanillaExtractExample /> */}
-    <ReactTypes />
+    {/* <ReactTypes /> */}
+    <FocusInOut />
   </>
 );
 
